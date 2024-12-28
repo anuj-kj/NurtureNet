@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Contact from './pages/Contact/Contact';
 import ContactRedux from './pages/Contact/ContactRedux';
+import Organizations from './pages/Organization/organizations';
 
 const Home = () => (
     <>
@@ -43,6 +44,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/contact-redux" element={<ContactRedux />} />
+                <Route path="/organizations" element={<Organizations />} />
             </Routes>
             <Footer />
         </Router>

@@ -1,15 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import store from './store';
 import App from './App';
 import './index.css'; // For global styles
 import './App.css'; // For app-specific styles
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap styles
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+const container = document.getElementById('root');
+const root = createRoot(container!); // Create a root.
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
