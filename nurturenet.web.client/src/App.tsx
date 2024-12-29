@@ -6,6 +6,10 @@ import Footer from './components/Footer';
 import Contact from './pages/Contact/Contact';
 import ContactRedux from './pages/Contact/ContactRedux';
 import Organizations from './pages/Organization/organizations';
+import Login from './pages/Auth/Login';
+import PrivateRoute from './pages/Auth/PrivateRoute';
+import OrganizationList from './pages/Organization/organizations';
+import Callback from './pages/Auth/Callback';
 
 const Home = () => (
     <>
@@ -44,7 +48,9 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/contact-redux" element={<ContactRedux />} />
-                <Route path="/organizations" element={<Organizations />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/auth/callback" element={<Callback />} />
+                <Route path="/organizations" element={<PrivateRoute><OrganizationList /></PrivateRoute>} />
             </Routes>
             <Footer />
         </Router>

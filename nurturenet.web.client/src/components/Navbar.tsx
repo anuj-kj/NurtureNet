@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UserInfo from './auth/UserInfo';
 
 export default function Navbar() {
     return (
@@ -42,6 +43,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                     </ul>
+                    <UserInfo />
                 </div>
             </div>
         </nav>
