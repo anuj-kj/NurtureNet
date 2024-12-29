@@ -10,6 +10,7 @@ import Login from './pages/Auth/Login';
 import PrivateRoute from './pages/Auth/PrivateRoute';
 import OrganizationList from './pages/Organization/organizations';
 import Callback from './pages/Auth/Callback';
+import Register from './pages/Auth/Register';
 
 const Home = () => (
     <>
@@ -49,6 +50,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/contact-redux" element={<ContactRedux />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/auth/callback" element={<Callback />} />
                 <Route path="/organizations" element={<PrivateRoute><OrganizationList /></PrivateRoute>} />
             </Routes>

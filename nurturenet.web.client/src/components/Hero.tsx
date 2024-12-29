@@ -8,7 +8,7 @@ export default function Hero() {
                 <p className="lead">
                     This is a simple, responsive template built with React, Vite, and Bootstrap.
                 </p>
-                <a href="#features" className="btn btn-primary btn-lg">
+                <a href="/organizations" className="btn btn-primary btn-lg">
                     Learn More
                 </a>
             </div>

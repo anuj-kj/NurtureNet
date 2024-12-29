@@ -2,9 +2,14 @@ import { jwtDecode } from 'jwt-decode';
 import { JwtModel } from '../models/auth/JwtModel';
 
 import { getData, postData } from '../api/apiService';
+import { RegisterModel } from '../models/auth/RegisterModel';
 
 export const credentialLogin = async (username: string, password: string): Promise<JwtModel> => {
     return await postData('/auth/login', { username, password });
+    
+};
+export const register = async (registerModel: RegisterModel): Promise<JwtModel> => {
+    return await postData('/auth/register', registerModel);
     
 };
 export const googleLogin = async () => {
