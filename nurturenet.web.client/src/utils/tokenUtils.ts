@@ -1,4 +1,5 @@
 import { User } from '../models/User';
+import {jwtDecode} from 'jwt-decode';
 
 export const isTokenExpired = (token: string | null): boolean => {
     if (!token) return true;
@@ -12,7 +13,7 @@ export const getTokenClaims = (): User | null => {
         return null;
     }
 
-    const claims = JSON.parse(atob(token.split('.')[1]));
+    const claims: any = jwtDecode(token);
     return {
         name: claims[ClaimTypes.Name],
         email: claims[ClaimTypes.Email],
