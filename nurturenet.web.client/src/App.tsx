@@ -1,16 +1,15 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Contact from './pages/Contact/Contact';
 import ContactRedux from './pages/Contact/ContactRedux';
-import Organizations from './pages/Organization/organizations';
 import Login from './pages/Auth/Login';
 import PrivateRoute from './pages/Auth/PrivateRoute';
 import OrganizationList from './pages/Organization/organizations';
 import Callback from './pages/Auth/Callback';
 import Register from './pages/Auth/Register';
+import Parent from './pages/ParentChild/Parent';
 
 const Home = () => (
     <>
@@ -52,6 +51,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/auth/callback" element={<Callback />} />
+                <Route path="/parent" element={<Parent />} />
                 <Route path="/organizations" element={<PrivateRoute><OrganizationList /></PrivateRoute>} />
             </Routes>
             <Footer />
