@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { RegisterModel } from '../../models/auth/RegisterModel';
 import { register as registerUser } from '../../services/authService';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
@@ -12,7 +11,6 @@ const Register = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-    const navigate = useNavigate();
 
     const onSubmit = async (data: RegisterModel) => {
         setIsLoading(true);

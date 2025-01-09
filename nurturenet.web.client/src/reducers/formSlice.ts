@@ -16,7 +16,7 @@ const formSlice = createSlice({
     name: 'form',
     initialState,
     reducers: {
-        submitForm: (state, action: PayloadAction<FormState>) => {
+        submitForm: (_state, action: PayloadAction<FormState>) => {
             return action.payload;
         },
     },

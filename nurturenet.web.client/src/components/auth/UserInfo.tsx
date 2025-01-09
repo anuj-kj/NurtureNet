@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signOut } from '../../services/authService';
 import { getTokenClaims } from '../../utils/tokenUtils';

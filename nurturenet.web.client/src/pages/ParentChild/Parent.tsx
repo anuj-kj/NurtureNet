@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Child from "../../components/child/Child";
 const Parent=()=>{
-    const [data, setData]=useState('hello');
+    const [data]=useState('hello');
     const [childData, setChildData]=useState('');
     const handleData=(data:string)=>{
         setChildData(data);
