@@ -30,9 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: ./nurturenet.web.client
+      - name: List files before build
+        run: ls -la ./nurturenet.web.client
       - name: Build the app
         run: npm run build
         working-directory: ./nurturenet.web.client
+      - name: List files after build
+        run: ls -la ./nurturenet.web.client
       - name: Verify build output
         run: ls -la ./nurturenet.web.client/build
       - name: Deploy to Azure Static Web Apps
