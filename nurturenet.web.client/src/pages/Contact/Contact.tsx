@@ -1,4 +1,3 @@
-// filepath: src/pages/Contact/Contact.tsx
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
