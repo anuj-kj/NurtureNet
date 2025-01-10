@@ -11,4 +11,8 @@
       ".js": "application/javascript",
       ".mjs": "application/javascript"
     }
+    ,
+  "globalHeaders": {
+    "Content-Type": "application/javascript"
+  }
   }
