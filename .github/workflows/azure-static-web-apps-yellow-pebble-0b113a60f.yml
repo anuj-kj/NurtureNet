@@ -17,6 +17,8 @@ jobs:
     permissions:
        id-token: write
        contents: read
+    env:
+      NODE_VERSION: 20
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,7 +26,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: ${{ env.NODE_VERSION }}
       - name: Install dependencies
         run: npm install
         working-directory: ./nurturenet.web.client
