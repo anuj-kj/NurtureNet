@@ -27,8 +27,10 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: npm install
+        working-directory: ./nurturenet.web.client
       - name: Build the app
         run: npm run build
+        working-directory: ./nurturenet.web.client
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
