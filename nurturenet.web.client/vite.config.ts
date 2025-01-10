@@ -6,5 +6,8 @@ export default defineConfig({
     plugins: [plugin()],
     server: {
         port: 49907,
+    },
+    build: {
+        outDir: 'build',
     }
 })
