@@ -33,7 +33,7 @@ jobs:
       - name: List files before build
         run: ls -la ./nurturenet.web.client
       - name: Build the app
-        run: npm run build
+        run: npx vite build && cp staticwebapp.config.json build/
         working-directory: ./nurturenet.web.client
       - name: List files after build
         run: ls -la ./nurturenet.web.client
