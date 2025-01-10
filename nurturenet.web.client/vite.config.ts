@@ -9,5 +9,10 @@ export default defineConfig({
     },
     build: {
         outDir: 'build',
+        rollupOptions: {
+            input: {
+                main: './App.tsx',
+            }
+        }
     }
 });
