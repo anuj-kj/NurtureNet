@@ -2,6 +2,7 @@
   "routes": [
     {
       "route": "/*",
+      "serve": "/index.html",
       "headers": {
         "cache-control": "no-cache"
       }
