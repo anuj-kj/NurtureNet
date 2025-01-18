@@ -1,18 +1,14 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "headers": {
-          "cache-control": "no-cache"
-        }
+  "routes": [
+    {
+      "route": "/*",
+      "headers": {
+        "cache-control": "no-cache"
       }
-    ],
-    "mimeTypes": {
-      ".js": "application/javascript",
-      ".mjs": "application/javascript"
     }
-    ,
-  "globalHeaders": {
-    "Content-Type": "application/javascript"
+  ],
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".mjs": "application/javascript"
   }
-  }
+}

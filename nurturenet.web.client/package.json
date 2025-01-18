@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "tsc -b && vite build && mkdir -p build && cp staticwebapp.config.json build/",
+    "build": "tsc -b && vite build && node scripts/copyConfig.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
